@@ -24,6 +24,7 @@ function App() {
     setWeight("");
     setHeight("");
     setResults("");
+    
   };
 
 
@@ -42,12 +43,12 @@ function App() {
 
             <h3 className='mt-3 pb-2 text-light'>Weight (kg)</h3>
             <div className=' d-flex justify-content-center mb-3' >
-              <input type="number" class="form-control w-50  " name='Weight' placeholder="Enter Your Weight" onChange={(e) => setWeight(e.target.value)}></input>
+              <input type="number" class="form-control w-50  " name='Weight' value={Weight} placeholder="Enter Your Weight" onChange={(e) => setWeight(e.target.value)}></input>
             </div>
 
             <h3 className='mt-4 pb-2 text-light'>Height (cm)</h3>
             <div className=' d-flex justify-content-center mb-3' >
-              <input type="number" class="form-control w-50 " name='Height' placeholder="Enter Your Height"
+              <input type="number" class="form-control w-50 " name='Height' value={Height} placeholder="Enter Your Height"
                 onChange={(e) => setHeight(e.target.value)} ></input>
             </div>
 
